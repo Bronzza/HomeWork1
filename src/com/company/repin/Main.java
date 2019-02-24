@@ -5,7 +5,7 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-        int[] arrray = new int[30000];
+        int[] arrray = new  int[30000];
 
         Romb.makeRomb(10);
         System.out.println();
