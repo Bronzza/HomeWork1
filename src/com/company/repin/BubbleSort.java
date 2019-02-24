@@ -1,5 +1,7 @@
 package com.company.repin;
 
+import static com.company.repin.UtilClassSort.*;
+
 public class BubbleSort {
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
@@ -7,7 +9,7 @@ public class BubbleSort {
         for (int i = 0; i < n; i++) {
             for (int j = 1; j < (n - i); j++) {
                 if (arr[j - 1] > arr[j]) {
-                    UtilClassSort.swap(arr, j, j - 1);
+                    swap(arr, j, j - 1);
                 }
             }
         }

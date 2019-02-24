@@ -1,4 +1,5 @@
 package com.company.repin;
+import static com.company.repin.UtilClassSort.*;
 
 public class HeapSort {
 
@@ -31,7 +32,7 @@ public class HeapSort {
             largest = r;
         }
         if (i != largest) {
-            UtilClassSort.swap(array, i, largest);
+            swap(array, i, largest);
             heapify(array, largest);
         }
     }

@@ -1,8 +1,10 @@
 package com.company.repin;
 
+import static com.company.repin.UtilClassSort.swap;
+
 public class SelectionSort {
     public static void selectionSort(int[] numbers) {
-        int tempIndex, tempNumb;
+        int tempIndex;
 
         for (int i = 0; i < numbers.length - 1; i++) {
             tempIndex = i;
@@ -10,7 +12,7 @@ public class SelectionSort {
                 if (numbers[j] < numbers[tempIndex])
                     tempIndex = j;
             }
-            UtilClassSort.swap(numbers, i, tempIndex);
+            swap(numbers, i, tempIndex);
         }
     }
 }

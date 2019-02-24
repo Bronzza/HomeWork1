@@ -1,18 +1,12 @@
 package com.company.repin;
 
+
 import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] arrray = new  int[30000];
-
-        Romb.makeRomb(10);
-        System.out.println();
-        System.out.println(AlgebraicNumb.factorial(5));
-        System.out.println(AlgebraicNumb.fibonachi(5));
-        System.out.println(ToPower.raisToPower(2,5));
-        System.out.println(MatchPrediction.checkResult(1,2,0,3));
+        int[] arrray = new  int[100000];
 
         long bubbleTime = 0, bucketTime = 0, heapTime = 0, mergeTime = 0, radixTime = 0, selectionTime = 0, insertTime = 0;
         Random rnd = new Random();
@@ -70,9 +64,9 @@ public class Main {
         bubbleTime = t2 - t1;
 
 
-        System.out.println("BubbleSort time = " + bubbleTime / 1000000 + "\nBucketSort time = " + bucketTime / 100000 +
-                "\nHeapSort time = " + heapTime / 100000 + "\nMergeSort time = " + mergeTime / 100000 +
-                "\nRadixSord time = " + radixTime / 100000 + "\nSelectionSort time = "
-                + selectionTime / 100000 + "\nInsertSort time = " + insertTime / 100000 + "\n*time in milli seconds");
+        System.out.println("BubbleSort time = " + bubbleTime / 1000000 + "\nBucketSort time = " + bucketTime / 1000000 +
+                "\nHeapSort time = " + heapTime / 1000000 + "\nMergeSort time = " + mergeTime / 1000000 +
+                "\nRadixSord time = " + radixTime / 1000000 + "\nSelectionSort time = "
+                + selectionTime / 1000000 + "\nInsertSort time = " + insertTime / 1000000 + "\n*time in milli seconds");
     }
 }

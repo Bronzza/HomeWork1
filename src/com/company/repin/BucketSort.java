@@ -1,15 +1,6 @@
 package com.company.repin;
 
 public class BucketSort {
-    private static int getMaxElement(int array[]) {
-        int max = array[0];
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] > max)
-                max = array[i];
-        }
-        return max;
-    }
-
     public static void sortBucket(int[] array) {
         int maxElement = getMaxElement(array);
         int[] bucket = new int[maxElement + 1];
@@ -24,5 +15,14 @@ public class BucketSort {
                 array[counterPosition++] = i;
             }
         }
+    }
+
+    private static int getMaxElement(int array[]) {
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max)
+                max = array[i];
+        }
+        return max;
     }
 }
